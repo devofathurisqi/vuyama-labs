@@ -1,0 +1,122 @@
+/* The owner's VUYAMA LABS logo photograph is the visual source of truth. */
+:root {
+  --blue: #b0483b;
+  --ink: #2a0e06;
+  --muted: #8a7468;
+  --paper: #fbf7f2;
+  --line: #e6d9ce;
+  --mint: #e4e7d2;
+  --font-heading: "Manrope Variable", sans-serif;
+  --font-body: "DM Sans Variable", sans-serif;
+}
+body { color: var(--ink); background: var(--paper); }
+::selection { background: #ecd0c4; color: var(--ink); }
+.site-header { background: #fbf7f2f2; border-bottom-color: var(--line); }
+.logo { color: var(--ink); line-height: 0; }
+.logo svg { width: 184px; height: 44px; }
+.logo-light { color: #f5e8dc; }
+.brand-note-mark { color: var(--ink); padding-right: 0; letter-spacing: 0; }
+.brand-note-mark > svg { width: 78px; height: 78px; }
+h1, h2 { font-weight: 450; }
+.hero h1 { font-weight: 400; letter-spacing: -.055em; }
+.hero h1 > span { color: var(--blue); }
+.hero-eyebrow { color: #765145; border-color: #ddc6b8; background: #fffaf6; letter-spacing: .17em; }
+.hero-note { color: #8a7468; }
+.hero-note strong { color: var(--ink); }
+.status-dot { background: var(--blue); box-shadow: 0 0 0 4px #b0483b12; }
+.button { border-radius: 5px; }
+.button-blue { background: var(--blue); color: #fffaf5; box-shadow: 0 4px 10px #b0483b12; }
+.button-blue:hover { background: #943b30; box-shadow: 0 7px 20px #b0483b26; }
+.button-dark { background: var(--ink); color: #fffaf5; }
+.button-dark:hover { background: #4c2b21; }
+.main-nav { letter-spacing: .07em; font-size: 10px; }
+.main-nav > a { text-transform: uppercase; }
+.main-nav a:hover, .main-nav a[aria-current="page"] { color: var(--blue); }
+.nav-new { color: var(--blue); background: #f2e2d8; border-color: #e8cfc0; }
+.section-label, .overline { letter-spacing: .18em; }
+.section-label { color: #826153; }
+.section-label > span { background: var(--blue); }
+.section-heading h2, .audience-heading h2, .finder-layout h2,
+.process-section h2, .faq-section h2, .pricing-faq h2,
+.comparison-section h2, .offer-detail-body h2, .work-detail-body h2,
+.offer-next h2, .mini-cta h2 { font-weight: 450; letter-spacing: -.035em; }
+.pricelist-heading h1, .offer-detail-heading h1, .work-detail-intro h1,
+.page-intro h1 { font-weight: 400; letter-spacing: -.045em; }
+.section-heading h2 > span, .pricelist-heading h1 > span,
+.audience-heading h2 > span { color: var(--muted); }
+.pricing-overview, .audience-section { background: #f2e9df; }
+.offer-card { background: #fffdf9; border-color: #e2d3c6; }
+.offer-featured { border-color: var(--blue); background: #fff8f2; box-shadow: inset 0 3px var(--blue); }
+.offer-card:hover { border-color: #c28b79; box-shadow: 0 10px 28px #48241808; }
+.offer-icon { background: #f6eee6; color: var(--blue); border-color: #e9d9cb; }
+.offer-card h3, .work-info h3, .service-card h3, .audience-grid h3,
+.scope-steps-grid h3, .offer-example-grid h3 { font-weight: 500; letter-spacing: -.025em; }
+.offer-price strong { font-weight: 450; letter-spacing: -.04em; }
+.offer-featured .offer-price strong { color: var(--blue); }
+.offer-featured .offer-top > span:last-child { color: var(--blue); background: #f1ddd2; }
+.offer-kicker, .offer-summary, .offer-price > span, .offer-price small,
+.work-card > p, .work-info > div > span, .audience-grid p,
+.audience-heading > p, .pricelist-heading p, .catalog-count,
+.scope-steps-grid p, .work-detail-note { color: #897164; }
+.catalog-filters button, .work-filters button { background: #f0e5db; color: #725448; }
+.catalog-filters button:hover, .work-filters button:hover { background: #ead4c7; color: var(--ink); }
+.catalog-filters button.active, .work-filters button.active { color: #fffaf5; background: var(--ink); }
+.catalog-search { border-color: #dfcdbf; background: #fffcf7; color: #987566; }
+.catalog-search input { color: var(--ink); }
+.price-scope-note { background: #f0e0d4; }
+.price-scope-note > span { color: #8c382e; }
+.price-scope-note p { color: #785245; }
+.comparison-scroll { border-color: #dfcdbf; }
+.comparison-table thead th { background: #efe4d9; }
+.comparison-table thead th:last-child { background: #eed6c9; color: #8c382e; }
+.comparison-table td, .comparison-table tbody th { border-top-color: #e8dacf; }
+.comparison-table td:last-child { background: #f7ece3; }
+.comparison-table tbody tr:hover { background: #f5eee6; }
+.comparison-yes { color: var(--blue); }
+.offer-detail-heading > aside { background: #f5e7dc; border-color: #e7ccba; }
+.offer-detail-heading > aside > strong { color: #9b3c31; font-weight: 450; }
+.offer-for-whom { background: #f4ece3; }
+.deliverables-card { background: #f1e7dc; border-color: #e6d4c3; }
+.offer-example-grid > a { background: #fffdf9; border-color: #e2d3c6; }
+.brief-form { border-radius: 8px; background: #fffbf6; box-shadow: 0 15px 40px #51271c22; }
+.brief-form input:not([type="checkbox"]), .brief-form textarea,
+.brief-form select { background: #fffdf9; border-color: #ddcabb; color: var(--ink); }
+.brief-selection { background: #f4e4d7; border-color: #e8cfbc; }
+.brief-selection strong { color: #963c30; }
+.brief-preview { background: #f5e8dc; border-color: #e6cbb5; }
+.brief-preview > strong { color: #963c30; }
+.brief-copy h2, .consultation-layout h2 { font-weight: 400; letter-spacing: -.04em; }
+.brief-copy h2 > span, .consultation-layout h2 > span { color: #f1d6c7; }
+.brief-copy > p, .consultation-layout > div > p { color: #fae5d7; }
+.brief-copy > a, .consult-direct, .brief-steps span, .brief-steps i { color: #fff5ed; }
+.brief-steps i { border-color: #d99a83; }
+.consultation-section .section-label.light { color: #fae5d7; }
+.consultation-section .section-label.light > span { background: #f2d4ba; }
+.consultation-section { background: var(--blue); background-image: radial-gradient(ellipse at top left, #c36750, transparent 60%); }
+.lab-section { background: #271712; }
+.lab-heading h2 { font-weight: 400; }
+.lab-heading h2 > span { color: #d4a48c; }
+.lab-heading p { color: #c4a896; }
+.lab-tag { color: #e9cab6; border-color: #6a493a; }
+.site-footer { background: #26140e; }
+.footer-word { color: #ead7c6; border-bottom-color: #51372c; font-weight: 400; letter-spacing: -.04em; }
+.footer-word > span { color: #967362; }
+.footer-top > div:first-child p, .footer-links a { color: #c5a995; }
+.footer-by, .footer-links > span:first-child, .footer-number,
+.footer-bottom { color: #a58672; }
+.footer-links a:hover { color: #fff5eb; }
+@media (max-width: 1100px) {
+  .main-nav { font-size: 9px; letter-spacing: .035em; gap: 20px; }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+  .logo svg { width: 160px; height: 38px; }
+  .main-nav { gap: 13px; font-size: 9px; }
+}
+@media (max-width: 700px) {
+  .logo svg { width: 158px; height: 38px; }
+  .main-nav.is-open { background: var(--paper); border-bottom-color: var(--line); }
+  .main-nav.is-open a { border-bottom-color: #eadccf; }
+  .hero h1 { font-weight: 400; }
+  .brand-note-mark > svg { width: 62px; height: 62px; }
+  .comparison-table tbody th { background: var(--paper); }
+}

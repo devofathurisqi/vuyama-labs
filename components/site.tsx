@@ -5,21 +5,26 @@ import { useEffect, useState } from "react";
 import { MotionConfig, motion, useScroll, useSpring } from "motion/react";
 import { ArrowUpRight, Menu, X, ArrowRight, MessageCircle } from "lucide-react";
 import { whatsapp, track } from "@/lib/content";
+import { brand } from "@/lib/brand";
 export function MotionProvider({ children }: { children: React.ReactNode }) {
   return <MotionConfig reducedMotion="user">{children}</MotionConfig>;
 }
+export function BrandMark() {
+  return (
+    <svg viewBox="0 0 400 400" aria-hidden="true">
+      <circle cx="200" cy="200" r="198" fill={brand.accent} />
+      <svg x="16" y="154" width="368" height="92" viewBox={brand.wordmarkViewBox}>
+        <path d={brand.wordmarkPath} fill={brand.ink} fillRule="evenodd" />
+      </svg>
+    </svg>
+  );
+}
 export function Logo({ light = false }: { light?: boolean }) {
   return (
-    <span className={`logo ${light ? "logo-light" : ""}`}>
-      <svg viewBox="0 0 40 40" aria-hidden="true">
-        <path d="M3 6h9l13 28h-9zM27 6h10L23 34l-5-11z" fill="currentColor" />
+    <span className={`logo ${light ? "logo-light" : ""}`} role="img" aria-label={brand.name}>
+      <svg viewBox={brand.wordmarkViewBox} aria-hidden="true">
+        <path d={brand.wordmarkPath} fill="currentColor" fillRule="evenodd" />
       </svg>
-      <span>
-        vuyama
-        <span className="logo-labs">
-          labs<span className="logo-dot">.</span>
-        </span>
-      </span>
     </span>
   );
 }
@@ -136,6 +141,9 @@ export function SiteFooter() {
             <WhatsAppLink source="footer">
               WhatsApp <ArrowUpRight size={14} />
             </WhatsAppLink>
+            <a href={brand.instagram} target="_blank" rel="noopener noreferrer">
+              Instagram {brand.instagramHandle} <ArrowUpRight size={14} />
+            </a>
             <Link href="/#diskusi">
               Diskusikan kebutuhan <ArrowRight size={14} />
             </Link>

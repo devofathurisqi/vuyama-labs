@@ -20,7 +20,7 @@ import {
   Send,
 } from "lucide-react";
 import { services, projects, faq, track } from "@/lib/content";
-import { Reveal, SectionLabel, WhatsAppLink } from "./site";
+import { BrandMark, Reveal, SectionLabel, WhatsAppLink } from "./site";
 import { ProductTheater } from "./enhancements";
 import { Playground } from "./playground";
 import { PricingOverview, RealProjects, AudienceSection } from "./studio";
@@ -389,7 +389,7 @@ function Process() {
       <Reveal>
         <div className="brand-note">
           <span className="brand-note-mark">
-            V<span>↗</span>
+            <BrandMark />
           </span>
           <div>
             <span className="overline">BERANGKAT DARI DUNIA USAHA</span>

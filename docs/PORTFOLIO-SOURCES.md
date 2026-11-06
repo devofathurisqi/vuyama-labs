@@ -29,4 +29,4 @@ Data/produk pada website aktif dapat berubah mengikuti pengelolaan pemilik. Kart
 
 ## Identitas dan publikasi
 
-Logo V, cobalt `#2554ed`, Manrope/DM Sans, dan sistem visual berasal dari profil `C:\project-devo\vuyama_labs\vuyama-labs`. Identitas yang ada dipertahankan. GitHub `devofathurisqi/vuyama-labs` memakai branch `prod`; homepage repository adalah https://vuyama-labs.vercel.app. Commit awal `03c2ff5c827b776752a5cf0f4f14f1b754b294cf` memiliki status Vercel `success` saat diperiksa.
+Struktur awal berasal dari profil `C:\project-devo\vuyama_labs\vuyama-labs`. Foto logo yang kemudian diberikan pemilik pada 6 November 2026 menjadi acuan identitas terbaru: wordmark VUYAMA LABS, lingkaran terracotta, dan tinta cokelat gelap. Lihat `docs/BRAND.md`. GitHub `devofathurisqi/vuyama-labs` memakai branch `prod`; homepage repository adalah https://vuyama-labs.vercel.app. Sesuai arahan pemilik, revisi diakhiri pada commit dan push tanpa pemeriksaan setelah deployment.

@@ -1,11 +1,17 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "@fontsource-variable/dm-sans";
 import "@fontsource-variable/manrope";
 import "./globals.css";
 import "./enhancements.css";
 import "./studio.css";
+import "./brand.css";
 import { SiteHeader, SiteFooter, MotionProvider } from "@/components/site";
 import { siteUrl } from "@/lib/config";
+import { brand } from "@/lib/brand";
+export const viewport: Viewport = {
+  themeColor: brand.accent,
+  colorScheme: "light",
+};
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -16,6 +22,7 @@ export const metadata: Metadata = {
     "Studio digital untuk UMKM, brand, profesional, dan organisasi. Katalog mulai Rp150.000, dashboard, website bisnis, aplikasi custom, AI automation, dan integrasi. Lihat fitur, pricelist, dan karya Vuyama Labs.",
   icons: { icon: "/favicon.svg" },
   openGraph: {
+    siteName: brand.name,
     title: "Vuyama Labs — Teknologi untuk bisnis Anda",
     description:
       "Katalog mulai Rp150.000, website bisnis, aplikasi, dan AI automation. Jelajahi pricelist, fitur, dan website yang telah dibangun.",
@@ -23,10 +30,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og.jpg",
+        url: "/og-brand.png",
         width: 1200,
         height: 630,
-        alt: "Vuyama Labs — contoh dashboard bisnis",
+        alt: "Vuyama Labs — logo terracotta resmi",
       },
     ],
   },

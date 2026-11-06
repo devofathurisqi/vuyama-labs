@@ -37,7 +37,7 @@ const scenes = [
     name: "Business app",
     icon: LayoutDashboard,
     caption: "Semua yang penting. Satu tampilan.",
-    color: "#2554ed",
+    color: "#b0483b",
   },
   {
     id: "website",
@@ -51,7 +51,7 @@ const scenes = [
     name: "AI automation",
     icon: Sparkles,
     caption: "Dari percakapan, menjadi tindakan.",
-    color: "#7c60d4",
+    color: "#96594b",
   },
 ] as const;
 

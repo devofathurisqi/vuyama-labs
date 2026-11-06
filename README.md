@@ -22,13 +22,14 @@ Buka http://localhost:3000. Produksi: `npm.cmd run build`; hasil export berada d
 - `components/home.tsx`: beranda dan form konsultasi.
 - `components/pricelist.tsx`: pencarian/filter layanan, tabel perbandingan, pemilihan layanan, form dan preview brief.
 - `components/studio.tsx`: kartu paket, portofolio, dan cakupan audience.
-- `app/studio.css`: tampilan tambahan yang mempertahankan logo V, cobalt, Manrope, dan DM Sans website sebelumnya.
+- `app/studio.css`: tampilan tambahan pricelist dan karya.
+- `app/brand.css`, `lib/brand.ts`, dan `docs/BRAND.md`: identitas terracotta, lettering VUYAMA LABS dari foto pemilik, dan tipografi geometris yang lebih ringan.
 - `docs/PORTFOLIO-SOURCES.md`: sumber harga, fitur, situs aktif, serta screenshot.
 - `components/playground.tsx`: demo automation, asisten skenario, katalog interaktif, dan dashboard.
 - `components/enhancements.tsx`: hero tiga adegan dengan tilt, carousel showcase, katalog dengan pilihan warna/perangkat/keranjang demo, serta simulasi waktu kerja.
 - `app/globals.css`: desain, breakpoint, animasi, dan reduced motion.
 - `app/enhancements.css`: komposisi hero, showcase editorial, simulasi, dan tampilan katalog responsif.
-- `public/favicon.svg`: logo simbol V.
+- `public/logo.svg`, `public/brand-seal.svg`, `public/favicon.svg`: wordmark dan logo lingkaran terracotta sesuai foto pemilik.
 - `public/images/*.webp`: empat visual demo konsep yang dihasilkan dengan imagegen.
 
 Form mengolah informasi di browser dan menyusun tautan WhatsApp. Pesan tidak disimpan atau otomatis dikirim. Demo chat berbasis skenario lokal, tidak menggunakan API AI. Showcase bukan proyek pelanggan.
@@ -41,7 +42,7 @@ Simulasi waktu menghitung jam pekerjaan rutin × persentase yang dipilih pengunj
 
 Event `vuyama:analytics` belum diteruskan ke penyedia eksternal. Hubungkan ke akun analytics yang dipilih sebelum mengklaim pengukuran berjalan. Tidak ada data form dalam event.
 
-Font DM Sans dan Manrope dibundel secara lokal melalui Fontsource; tidak membutuhkan koneksi Google Fonts saat halaman dimuat. Font sistem menjadi fallback jika tidak tersedia. Logo V dan sistem visual mengikuti identitas website Vuyama Labs yang sudah ada.
+Font DM Sans dan Manrope dibundel secara lokal melalui Fontsource; tidak membutuhkan koneksi Google Fonts saat halaman dimuat. Wordmark VUYAMA LABS ditelusuri menjadi artwork SVG dari foto logo yang diberikan pemilik. Palet terracotta `#B0483B`, tinta cokelat gelap, latar krem, dan judul geometris yang ringan mengikuti arah logo tersebut. Instagram `@vuyama.labs` ditautkan di footer.
 
 ## Pricelist, karya, dan cakupan
 

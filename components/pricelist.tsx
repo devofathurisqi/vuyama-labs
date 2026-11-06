@@ -37,7 +37,7 @@ function BriefBuilder({ selected, onSelect }: { selected: string; onSelect: (slu
   const message = buildBrief(offer, name, business, details, extras);
   useEffect(() => { setReady(false); }, [selected]);
   return (
-    <section className="brief-section" id="brief">
+    <section className="brief-section consultation-section" id="brief">
       <div className="container brief-layout">
         <div className="brief-copy"><SectionLabel light>LET’S MAKE IT YOURS</SectionLabel><h2>Sudah ada<br />gambaran?<br /><span>Ceritakan sedikit.</span></h2><p>Pilih layanan, tulis kebutuhan, lalu periksa ringkasan sebelum melanjutkan ke WhatsApp.</p><div className="brief-steps"><span><i>01</i>Pilih yang paling dekat</span><span><i>02</i>Lengkapi brief singkat</span><span><i>03</i>Diskusikan scope & biaya</span></div><WhatsAppLink className="text-button" source="pricelist-direct">Lebih nyaman chat langsung? <ArrowUpRight size={17} /></WhatsAppLink></div>
         <form className="brief-form" onChange={() => setReady(false)} onSubmit={event => { event.preventDefault(); setReady(true); track("pricing_brief_prepared", { offer: selected }); }}>
