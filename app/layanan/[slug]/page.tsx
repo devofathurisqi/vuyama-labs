@@ -78,6 +78,9 @@ export default async function ServicePage({
             Fitur, waktu, biaya, dan kebutuhan integrasi ditentukan setelah kita
             memahami tujuan dan proses bisnis Anda.
           </p>
+          <Link href="/pricelist/" className="service-pricing-link">
+            Lihat rincian layanan & pricelist <ArrowUpRight size={17} />
+          </Link>
         </div>
       </section>
       <section className="detail-related container">

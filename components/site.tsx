@@ -72,11 +72,14 @@ export function SiteHeader() {
           <Link href="/#layanan" onClick={() => setOpen(false)}>
             Layanan
           </Link>
-          <Link href="/#showcase" onClick={() => setOpen(false)}>
-            Showcase <span className="nav-count">04</span>
+          <Link href="/pricelist/" onClick={() => setOpen(false)} aria-current={pathname.startsWith("/pricelist") ? "page" : undefined}>
+            Pricelist
+          </Link>
+          <Link href="/karya/" onClick={() => setOpen(false)} aria-current={pathname.startsWith("/karya") ? "page" : undefined}>
+            Karya <span className="nav-count">06</span>
           </Link>
           <Link href="/#playground" onClick={() => setOpen(false)}>
-            The Playground <span className="nav-new">TRY IT</span>
+            Playground <span className="nav-new">TRY IT</span>
           </Link>
           <Link href="/#cara-kerja" onClick={() => setOpen(false)}>
             Cara kerja
@@ -118,12 +121,14 @@ export function SiteFooter() {
               <br />
               cara bisnis Anda bekerja.
             </p>
-            <span className="footer-by">PART OF THE VUYAMA JOURNEY</span>
+            <span className="footer-by">DIGITAL STUDIO / UNTUK BISNIS ANDA</span>
           </div>
           <div className="footer-links">
             <span>JELAJAHI</span>
             <Link href="/#layanan">Layanan</Link>
-            <Link href="/showcase/">Showcase</Link>
+            <Link href="/pricelist/">Pricelist & fitur</Link>
+            <Link href="/karya/">Karya</Link>
+            <Link href="/showcase/">Eksplorasi konsep</Link>
             <Link href="/#playground">The Playground</Link>
           </div>
           <div className="footer-links">

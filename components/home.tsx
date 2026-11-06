@@ -21,12 +21,9 @@ import {
 } from "lucide-react";
 import { services, projects, faq, track } from "@/lib/content";
 import { Reveal, SectionLabel, WhatsAppLink } from "./site";
-import {
-  ProductTheater,
-  FeaturedShowcase,
-  TimeEstimator,
-} from "./enhancements";
+import { ProductTheater } from "./enhancements";
 import { Playground } from "./playground";
+import { PricingOverview, RealProjects, AudienceSection } from "./studio";
 const icons = {
   Globe,
   Smartphone,
@@ -43,17 +40,17 @@ function Hero() {
         <div className="hero-copy">
           <Reveal>
             <div className="hero-eyebrow">
-              <span className="status-dot" /> YOUR NEXT TECHNOLOGY PARTNER
+              <span className="status-dot" /> VUYAMA LABS / DIGITAL STUDIO
             </div>
           </Reveal>
           <Reveal delay={0.08}>
             <h1>
-              Ide Anda.
+              Website Anda.
               <br />
-              Kami buat
+              Sistem Anda.
               <br />
               <span>
-                jadi nyata.
+                Kami bangun.
                 <svg viewBox="0 0 430 18" aria-hidden="true">
                   <path d="M3 14Q210-7 425 10" />
                 </svg>
@@ -62,26 +59,24 @@ function Hero() {
           </Reveal>
           <Reveal delay={0.16}>
             <p>
-              Website, aplikasi, hingga AI automation.
-              <br />
-              Solusi digital yang dibangun untuk kebutuhan
-              <br className="desktop-break" /> bisnis Anda. Sederhana maupun
-              kompleks.
+              Dari katalog produk sampai aplikasi dan AI automation.
+              Kami membantu pelaku usaha, profesional, dan organisasi
+              membangun langkah digital berikutnya.
             </p>
             <div className="hero-actions">
-              <Link href="#diskusi" className="button button-blue">
-                Diskusikan ide Anda <ArrowUpRight size={18} />
+              <Link href="/pricelist/" className="button button-blue">
+                Lihat layanan & harga <ArrowUpRight size={18} />
               </Link>
-              <Link href="#showcase" className="text-button">
-                Lihat karya konsep <ArrowRight size={16} />
+              <Link href="#karya" className="text-button">
+                Jelajahi karya <ArrowRight size={16} />
               </Link>
             </div>
             <div className="hero-note">
               <span className="note-symbol">✳</span>
               <span>
-                Untuk UMKM yang bertumbuh.
+                Untuk bisnis Anda, apa pun bidangnya.
                 <br />
-                <strong>Dan bisnis dengan ide besar.</strong>
+                <strong>Katalog mulai Rp150.000.</strong>
               </span>
             </div>
           </Reveal>
@@ -91,7 +86,7 @@ function Hero() {
         </Reveal>
       </div>
       <div className="container hero-bottom">
-        <span>SMALL BUSINESS. BIG POSSIBILITIES.</span>
+        <span>YOUR BUSINESS. OUR NEXT BUILD.</span>
         <Link href="#layanan">
           Scroll to explore <span>↓</span>
         </Link>
@@ -301,31 +296,7 @@ export function ShowcaseGrid({ full = false }: { full?: boolean }) {
   );
 }
 function Showcase() {
-  return (
-    <section id="showcase" className="section showcase-section container">
-      <Reveal>
-        <SectionLabel>IMAGINE THE POSSIBILITIES</SectionLabel>
-        <div className="section-heading">
-          <h2>
-            Bukan sekadar ide.
-            <br />
-            <span>Begini bentuknya.</span>
-          </h2>
-          <div>
-            <p>
-              Jelajahi contoh solusi yang bisa kita bangun.
-              <br />
-              Setiap bisnis punya cerita. Ini beberapa kemungkinan.
-            </p>
-            <span className="honest-note">
-              Showcase berikut adalah demo konsep, bukan proyek klien.
-            </span>
-          </div>
-        </div>
-      </Reveal>
-      <FeaturedShowcase />
-    </section>
-  );
+  return <RealProjects />;
 }
 function Lab() {
   return (
@@ -424,9 +395,9 @@ function Process() {
             <span className="overline">BERANGKAT DARI DUNIA USAHA</span>
             <h3>Teknologi dekat dengan bisnis Anda.</h3>
             <p>
-              Vuyama Labs lahir dari keinginan membantu bisnis bergerak lebih
-              baik. Berawal dari kebutuhan UMKM dan jaringan Vuyama, terbuka
-              untuk ide dan bisnis dari berbagai bidang.
+              Vuyama Labs membangun website, aplikasi, dan otomatisasi untuk
+              UMKM, brand independen, usaha jasa, profesional, serta organisasi.
+              Solusi mengikuti kebutuhan, identitas, dan cara kerja Anda.
             </p>
           </div>
           <Link href="#diskusi" className="text-button">
@@ -608,11 +579,12 @@ export function HomePage() {
     <main id="main">
       <Hero />
       <CapabilityStrip />
+      <PricingOverview />
+      <Showcase />
+      <AudienceSection />
       <Services />
       <SolutionFinder />
-      <Showcase />
       <Lab />
-      <TimeEstimator />
       <Process />
       <FAQ />
       <Consultation />

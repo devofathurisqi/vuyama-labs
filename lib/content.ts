@@ -18,7 +18,7 @@ export const services = [
       "Pelanggan mencari informasi sebelum memutuskan. Kami membuat website yang menjelaskan bisnis Anda, menampilkan produk dengan baik, dan memudahkan mereka menghubungi Anda.",
     examples: [
       "Company profile untuk usaha jasa",
-      "Katalog hijab dengan pemesanan WhatsApp",
+      "Katalog produk milik brand Anda dengan pemesanan WhatsApp",
       "Toko online dengan alur checkout",
     ],
     demo: "aruna",
@@ -245,7 +245,7 @@ export const faq = [
   ],
   [
     "Berapa biaya dan lama pengerjaannya?",
-    "Biaya dan waktu mengikuti fitur, kompleksitas, konten, dan integrasi yang dibutuhkan. Setelah diskusi, Anda akan menerima usulan ruang lingkup, biaya, dan tahapan sebelum pengerjaan dimulai.",
+    "Katalog mulai Rp150.000, Signature Rp250.000, dan Katalog + Dashboard Rp350.000 untuk pembuatan satu kali sesuai scope. Rincian fitur ada di halaman Pricelist. Jadwal, konten, revisi, biaya layanan pihak ketiga, dan kebutuhan custom disepakati sebelum pengerjaan.",
   ],
   [
     "Apakah bisa menghubungkan sistem yang sudah saya pakai?",
@@ -256,8 +256,8 @@ export const faq = [
     "Serah terima, dokumentasi, serta opsi pemeliharaan dan dukungan dibahas dalam proposal. Dengan begitu, Anda mengetahui apa yang termasuk dan bagaimana melanjutkan pengembangan.",
   ],
   [
-    "Apakah showcase ini proyek pelanggan?",
-    "Showcase saat ini adalah demo konsep yang dibuat untuk menggambarkan kemampuan dan kemungkinan solusi. Visual dan data di dalamnya merupakan ilustrasi, bukan hasil proyek pelanggan.",
+    "Di mana saya bisa melihat hasil pengembangannya?",
+    "Halaman Karya menampilkan website yang aktif beserta fitur dan tautan publiknya. Aruna Rent ditandai sebagai demo fungsional dengan data fiktif. Playground dan Eksplorasi Konsep menyediakan simulasi untuk membantu Anda memahami kemungkinan solusi.",
   ],
 ] as const;
 export function whatsapp(

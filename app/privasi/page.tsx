@@ -14,10 +14,11 @@ export default function PrivacyPage() {
         description="Penjelasan sederhana tentang cara website ini menggunakan informasi yang Anda masukkan."
       />
       <article className="container legal-content">
-        <h2>Form konsultasi</h2>
+        <h2>Form konsultasi & brief layanan</h2>
         <p>
-          Nama, nama bisnis, dan kebutuhan yang Anda isi digunakan di perangkat
-          Anda untuk menyusun pesan konsultasi. Website ini tidak menyimpan
+          Nama, nama bisnis, pilihan layanan, kebutuhan tambahan, dan cerita
+          yang Anda isi digunakan di perangkat Anda untuk menyusun pesan
+          konsultasi. Website ini tidak menyimpan
           formulir tersebut ke database. Pesan tidak otomatis dikirim; Anda
           dapat memeriksanya dan memilih mengirim di WhatsApp.
         </p>

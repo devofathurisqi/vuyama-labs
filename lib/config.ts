@@ -1,1 +1,1 @@
-export const siteUrl = "https://vuyama-labs.equal-fox-9631.chatgpt.site";
+export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://vuyama-labs.vercel.app").replace(/\/$/, "");

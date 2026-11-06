@@ -3,21 +3,22 @@ import "@fontsource-variable/dm-sans";
 import "@fontsource-variable/manrope";
 import "./globals.css";
 import "./enhancements.css";
+import "./studio.css";
 import { SiteHeader, SiteFooter, MotionProvider } from "@/components/site";
 import { siteUrl } from "@/lib/config";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Vuyama Labs — Ide Anda. Kami buat jadi nyata.",
+    default: "Vuyama Labs — Website, Sistem & Solusi Digital untuk Bisnis Anda",
     template: "%s | Vuyama Labs",
   },
   description:
-    "Jasa website, aplikasi custom, sistem bisnis, AI automation, dan integrasi untuk UMKM dan bisnis umum. Diskusikan kebutuhan Anda bersama Vuyama Labs.",
+    "Studio digital untuk UMKM, brand, profesional, dan organisasi. Katalog mulai Rp150.000, dashboard, website bisnis, aplikasi custom, AI automation, dan integrasi. Lihat fitur, pricelist, dan karya Vuyama Labs.",
   icons: { icon: "/favicon.svg" },
   openGraph: {
     title: "Vuyama Labs — Teknologi untuk bisnis Anda",
     description:
-      "Dari website sederhana sampai aplikasi dan AI automation. Jelajahi solusi dan diskusikan kebutuhan bisnis Anda.",
+      "Katalog mulai Rp150.000, website bisnis, aplikasi, dan AI automation. Jelajahi pricelist, fitur, dan website yang telah dibangun.",
     locale: "id_ID",
     type: "website",
     images: [
